@@ -16,3 +16,12 @@ CREATE TABLE `user` (
 ALTER TABLE `user` ADD UNIQUE (`username`);
 ALTER TABLE `user` ADD UNIQUE (`email`);
 ALTER TABLE `user` ADD UNIQUE (`phone`);
+
+DROP TABLE IF EXISTS `Student`;
+CREATE TABLE `Student` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL comment '姓名',
+  `sex` varchar(255) DEFAULT NULL comment '性别',
+  `class` varchar(50) DEFAULT NULL comment '班级',
+  PRIMARY KEY (`id`)
+);
