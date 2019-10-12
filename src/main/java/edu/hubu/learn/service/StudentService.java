@@ -20,5 +20,10 @@ public class StudentService {
 
 	public List<Student> getStudents() {
 		return studentDao.findAll();
-	}
+    }
+    
+    public Student addStudent(Student student) {
+        return studentDao.save(student);
+    }
+
 }
