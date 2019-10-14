@@ -12,9 +12,14 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private String number;
+
     private String name;
 
     private String sex;
 
     private String classnum;
+
+	public void setStudentname(String keyword) {
+	}
 }

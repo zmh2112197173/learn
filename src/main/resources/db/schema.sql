@@ -20,6 +20,7 @@ ALTER TABLE `user` ADD UNIQUE (`phone`);
 DROP TABLE IF EXISTS `Student`;
 CREATE TABLE `Student` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `number` varchar(50) DEFAULT NULL comment '学号',
   `name` varchar(50) DEFAULT NULL comment '姓名',
   `sex` varchar(255) DEFAULT NULL comment '性别',
   `classnum` varchar(50) DEFAULT NULL comment '班级',

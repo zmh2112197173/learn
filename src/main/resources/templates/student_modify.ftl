@@ -23,29 +23,30 @@
       <div class="col-md-4">
         <ul class="nav nav-pills nav-stacked">
           <li role="presentation"><a href="/student/list">列表</a></li>
-          <li role="presentation" class="active"><a href="/student/add">新增</a></li>
-           <li role="presentation"><a href="/student/search">搜索</a></li>
+          <li role="presentation"><a href="/student/add">新增</a></li>
+          <li role="presentation" class="active"><a href="#">修改</a></li>
+          <li role="presentation"><a href="/student/search">搜索</a></li>
         </ul>
       </div>
       <div class="col-md-8">      
-        <form action="/student/do_add">
+        <form action="/student/do_modify">
+            <input type="text"id="id" name="id" value="${student.id}">
             <div class="form-group">
                 <label for="number">学号</label>
-                <input type="text" class="form-control" id="number" name="number" placeholder="请输入学号">
+                <input type="text" class="form-control" id="number" name="number" value="${student.number}" placeholder="请输入学号">
             </div>
             <div class="form-group">
                 <label for="name">姓名</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名">
+                <input type="name" class="form-control" id="name" name="name" value="${student.name}" placeholder="请输入姓名">
             </div>
-            <div class="form-group">
+              <div class="form-group">
                 <label for="sex">性别</label>
-                <input type="text" class="form-control" id="sex" name="sex" placeholder="请输入性别">
+                <input type="text" class="form-control" id="sex" name="sex" value="${student.sex}" placeholder="请输入性别">
             </div>
             <div class="form-group">
                 <label for="classnum">班级</label>
-                <input type="text" class="form-control" id="classnum" name="classnum" placeholder="请输入班级">
+                <input type="text" class="form-control" id="classnum" name="classnum" value="${student.classnum}" placeholder="请输入班级">
             </div>
-            
             <button type="submit" class="btn btn-default">确认</button>
         </form>
       </div>
