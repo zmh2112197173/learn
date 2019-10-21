@@ -23,6 +23,7 @@ CREATE TABLE `Student` (
   `number` varchar(50) DEFAULT NULL comment '学号',
   `name` varchar(50) DEFAULT NULL comment '姓名',
   `sex` varchar(255) DEFAULT NULL comment '性别',
+  `avatar_url` varchar(50000) DEFAULT NULL comment '头像·',
   `classnum` varchar(50) DEFAULT NULL comment '班级',
   PRIMARY KEY (`id`)
 );

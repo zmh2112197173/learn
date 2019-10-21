@@ -20,6 +20,6 @@ public class Student {
 
     private String classnum;
 
-	public void setStudentname(String keyword) {
-	}
+    @Column(name="avatar_url")
+    private String avatar;
 }

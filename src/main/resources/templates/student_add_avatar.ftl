@@ -24,29 +24,15 @@
         <ul class="nav nav-pills nav-stacked">
           <li role="presentation"><a href="/student/list">列表</a></li>
           <li role="presentation" class="active"><a href="/student/add">新增</a></li>
-           <li role="presentation"><a href="/student/search">搜索</a></li>
+          <li role="presentation"><a href="/student/search">搜索</a></li>
         </ul>
       </div>
       <div class="col-md-8">      
-        <form action="/student/do_add">
+        <form action="/student/do_add_avatar/${student.id}" enctype="multipart/form-data" method="post">
             <div class="form-group">
-                <label for="number">学号</label>
-                <input type="text" class="form-control" id="number" name="number" placeholder="请输入学号">
+                <label for="avatar">头像图片</label>
+                <input type="file" class="form-control" id="avatar" name="avatar" placeholder="请选择图片">
             </div>
-            <div class="form-group">
-                <label for="name">姓名</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="请输入姓名">
-            </div>
-            <div class="form-group">
-                <label for="sex">性别</label>
-                <input type="text" class="form-control" id="sex" name="sex" placeholder="请输入性别">
-            </div>
-            <div class="form-group">
-                <label for="classnum">班级</label>
-                <input type="text" class="form-control" id="classnum" name="classnum" placeholder="请输入班级">
-            </div>
-             
-            
             <button type="submit" class="btn btn-default">确认</button>
         </form>
       </div>
